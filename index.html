@@ -1,0 +1,749 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-id="th-modified">Geetaba Na Khakhra | Authentic Handmade Gujarati Snacks</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Configuration & Custom CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e40af', // Deep Blue from the wrapper
+                            blueDark: '#1e3a8a',
+                            yellow: '#fde047', // Ribbon Yellow
+                            red: '#dc2626', // Text Red
+                            green: '#16a34a', // Veg icon green
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        gujarati: ['Mukta', 'sans-serif'], // Better support for Gujarati text
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for animations and utilities not natively in Tailwind */
+        .toast-enter {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        .toast-enter-active {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .toast-exit {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .toast-exit-active {
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover .product-img {
+            transform: scale(1.08);
+        }
+        
+        .pattern-bg {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e40af' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Custom Ribbon Shape */
+        .ribbon-banner {
+            clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+        }
+    </style>
+<meta property="og:title" content="Geetaba Na Khakhra | Authentic Handmade Gujarati Snacks" data-id="th-modified"><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified"><meta property="og:image:width" content="1501" data-id="th-modified"><meta property="og:image:height" content="1501" data-id="th-modified"><meta property="og:image:type" content="image/png" data-id="th-modified"><meta property="og:url" content="https://bronze-helen-5.tiiny.site/" data-id="th-modified"><meta property="og:type" content="website" data-id="th-modified"><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Poppins, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-6{bottom:-1.5rem}.-left-6{left:-1.5rem}.bottom-4{bottom:1rem}.right-0{right:0px}.right-4{right:1rem}.top-0{top:0px}.left-2{left:0.5rem}.top-2{top:0.5rem}.z-10{z-index:10}.z-50{z-index:50}.z-\[60\]{z-index:60}.z-\[70\]{z-index:70}.z-\[80\]{z-index:80}.mx-auto{margin-left:auto;margin-right:auto}.mb-0\.5{margin-bottom:0.125rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mr-4{margin-right:1rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-24{height:6rem}.h-3{height:0.75rem}.h-64{height:16rem}.h-8{height:2rem}.h-auto{height:auto}.h-full{height:100%}.h-56{height:14rem}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-24{width:6rem}.w-3{width:0.75rem}.w-8{width:2rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-y-1\/4{--tw-translate-y:-25%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-1\/4{--tw-translate-x:25%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-10{--tw-translate-x:2.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-10{--tw-translate-y:2.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-rotate-2{--tw-rotate:-2deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-2{--tw-rotate:2deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.cursor-pointer{cursor:pointer}.resize-none{resize:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-sm{border-radius:0.125rem}.rounded-xl{border-radius:0.75rem}.rounded-b-md{border-bottom-right-radius:0.375rem;border-bottom-left-radius:0.375rem}.rounded-b-sm{border-bottom-right-radius:0.125rem;border-bottom-left-radius:0.125rem}.rounded-t-md{border-top-left-radius:0.375rem;border-top-right-radius:0.375rem}.rounded-t-sm{border-top-left-radius:0.125rem;border-top-right-radius:0.125rem}.border{border-width:1px}.border-4{border-width:4px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-t-4{border-top-width:4px}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-brand-green{--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.border-brand-red\/20{border-color:rgb(220 38 38 / 0.2)}.border-brand-yellow{--tw-border-opacity:1;border-color:rgb(253 224 71 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-green-200{--tw-border-opacity:1;border-color:rgb(187 247 208 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138 / var(--tw-border-opacity, 1))}.border-brand-blue{--tw-border-opacity:1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.bg-\[\#25D366\]{--tw-bg-opacity:1;background-color:rgb(37 211 102 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-brand-blue{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.bg-brand-green{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-brand-red{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-brand-yellow{--tw-bg-opacity:1;background-color:rgb(253 224 71 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-16{padding-bottom:4rem}.pb-2{padding-bottom:0.5rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pt-16{padding-top:4rem}.pt-2{padding-top:0.5rem}.pt-32{padding-top:8rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-gujarati{font-family:Mukta, sans-serif}.font-sans{font-family:Poppins, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-brand-blue{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-brand-green{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-brand-red{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-brand-yellow{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-700{--tw-text-opacity:1;color:rgb(161 98 7 / var(--tw-text-opacity, 1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14 / var(--tw-text-opacity, 1))}.text-yellow-900{--tw-text-opacity:1;color:rgb(113 63 18 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-30{opacity:0.3}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-lg{--tw-drop-shadow:drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.selection\:bg-brand-blue *::selection{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-brand-blue::selection{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:rotate-0:hover{--tw-rotate:0deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-\[\#128C7E\]:hover{--tw-bg-opacity:1;background-color:rgb(18 140 126 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-brand-blue:hover{--tw-bg-opacity:1;background-color:rgb(30 64 175 / var(--tw-bg-opacity, 1))}.hover\:bg-brand-blueDark:hover{--tw-bg-opacity:1;background-color:rgb(30 58 138 / var(--tw-bg-opacity, 1))}.hover\:bg-brand-red:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-green-500:hover{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.hover\:text-brand-blue:hover{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.hover\:text-brand-yellow:hover{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-brand-blue:focus{--tw-border-opacity:1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:w-96{width:24rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:space-y-0 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0px * var(--tw-space-y-reverse))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:pb-24{padding-bottom:6rem}.md\:pt-40{padding-top:10rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:mt-0{margin-top:0px}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:justify-start{justify-content:flex-start}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-left{text-align:left}.lg\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style><script defer data-domain="bronze-helen-5.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+<body class="font-sans text-gray-800 bg-white antialiased selection:bg-brand-blue selection:text-white"><div style="position: fixed !important; bottom: 0% !important; left: 0% !important; right: 0% !important; width: 100% !important; height: 55px !important; z-index: 9999 !important;"><a href="https://tiiny.host?ref=free-site">
+    <div style="padding: 10px !important; height: 55px; text-align: center; background: rgb(220,137,232) !important; background: linear-gradient(141deg, rgba(220,137,232,1) 0%, rgba(144,64,204,1) 100%) !important;">
+      <img style="height: 35px !important; width: auto !important;" src="https://tiiny.host/assets/img/ad.png" alt="tiiny.host">
+    </div>
+  </a></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                
+                <!-- Logo Recreation based on Packaging -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <div class="flex flex-col items-center justify-center font-gujarati">
+                        <span class="text-[10px] text-brand-red font-bold leading-none mb-0.5">॥ શ્રી ॥</span>
+                        <div class="bg-brand-blue text-white px-3 py-0.5 rounded-t-md font-bold text-sm tracking-wider w-full text-center">ગીતાબા ના</div>
+                        <div class="bg-brand-yellow text-brand-red px-4 py-1 rounded-b-md rounded-t-sm font-black text-xl shadow-sm border-b-2 border-brand-red/20 transform -rotate-2">ખાખરા</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-700 hover:text-brand-blue font-semibold transition-colors">Home</a>
+                    <a href="#menu" class="text-gray-700 hover:text-brand-blue font-semibold transition-colors">Our Menu</a>
+                    <a href="#about" class="text-gray-700 hover:text-brand-blue font-semibold transition-colors">About Us</a>
+                </div>
+
+                <!-- Cart & Mobile Toggle -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center bg-green-50 px-2 py-1 rounded border border-green-200">
+                        <div class="w-3 h-3 bg-brand-green rounded-sm border border-brand-green mr-2 flex items-center justify-center">
+                            <div class="w-1.5 h-1.5 bg-brand-green rounded-full"></div>
+                        </div>
+                        <span class="text-xs font-bold text-brand-green">100% VEG</span>
+                    </div>
+                    
+                    <button class="relative p-2 text-gray-700 hover:text-brand-blue transition-colors bg-gray-50 rounded-full" onclick="toggleCart()">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <span id="cart-count" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/4 -translate-y-1/4 bg-brand-red rounded-full shadow-sm">0</span>
+                    </button>
+                    <button class="md:hidden p-2 text-gray-700 focus:outline-none" onclick="toggleMobileMenu()">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50" onclick="toggleMobileMenu()">Home</a>
+                <a href="#menu" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50" onclick="toggleMobileMenu()">Our Menu</a>
+                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50" onclick="toggleMobileMenu()">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden pattern-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 mb-6">
+                        <span class="py-1 px-3 rounded bg-blue-100 text-brand-blue text-sm font-bold tracking-wider border border-blue-200">ZERO MAIDA</span>
+                        <span class="py-1 px-3 rounded bg-yellow-100 text-yellow-800 text-sm font-bold tracking-wider border border-yellow-200">HANDMADE</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 font-gujarati">
+                        સાત્વિક અને શુદ્ધ આહાર <br>
+                        <span class="text-brand-blue">એટલે ખાખરા.</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-600 mb-2 max-w-lg mx-auto lg:mx-0 font-gujarati font-medium text-brand-red">
+                        સ્વાદમાં પણ ખાસ, મારા પણ ખાસ એટલે જ...
+                    </p>
+                    <p class="text-md text-gray-500 mb-8 max-w-lg mx-auto lg:mx-0">
+                        Experience the authentic taste of Gujarat with Geetaba's premium, hand-roasted Khakhras. Perfect for your daily chai, travelling, or guilt-free snacking.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
+                        <a href="#menu" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-bold rounded shadow-lg text-white bg-brand-blue hover:bg-brand-blueDark hover:shadow-xl transition-all duration-300">
+                            Order Now
+                            <i class="fa-solid fa-arrow-down ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Showcase -->
+                <div class="relative mt-10 lg:mt-0 flex justify-center">
+                    <div class="absolute inset-0 bg-brand-yellow rounded-full blur-3xl opacity-30 transform translate-x-10 translate-y-10"></div>
+                    
+                    <!-- Stack of Khakhras Representation -->
+                    <div class="relative z-10 w-full max-w-md">
+                        <!-- We use the provided image as the main hero if possible, or a beautiful wrapper representation -->
+                        <img src="/images/1782103900514-image-ababcbafbafbdf.png" onerror="this.src='https://placehold.co/800x600/1e40af/ffffff?text=Geetaba+Na+Khakhra'" alt="Geetaba Na Khakhra Official Packaging" class="w-full h-auto rounded-xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                             
+                        <!-- Decorative floating elements -->
+                        <div class="absolute -bottom-6 -left-6 bg-white p-3 rounded-lg shadow-xl flex items-center space-x-3 border border-gray-100 animate-bounce" style="animation-duration: 3s;">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-brand-green">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500">Made with</p>
+                                <p class="font-bold text-gray-800 text-sm">Fresh Ingredients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu / Products Section -->
+    <section id="menu" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-red tracking-widest uppercase mb-2">Our Menu</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Taste of Your Choice</h3>
+                <div class="w-24 h-1 bg-brand-yellow mx-auto rounded"></div>
+            </div>
+
+            <!-- Authentic Flavors Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="products-container"><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Plain &amp; Pure
+                        </div>
+                        <img src="/images/1782103954210-image-aaaeff.png" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Sada%20Khakhra'" alt="Sada Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500 ableimage">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Sada Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">સાત્વિક સાદા ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹75</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(1)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Cumin Flavor
+                        </div>
+                        <img src="https://placehold.co/400x400/eeeeee/999999?text=Jeera%20Khakhra" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Jeera%20Khakhra'" alt="Jeera Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Jeera Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">જીરા ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹75</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(2)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Spicy &amp; Tasty
+                        </div>
+                        <img src="https://placehold.co/400x400/eeeeee/999999?text=Masala%20Khakhra" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Masala%20Khakhra'" alt="Masala Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Masala Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">મસાલા ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹75</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(3)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Fenugreek
+                        </div>
+                        <img src="https://placehold.co/400x400/eeeeee/999999?text=Methi%20Khakhra" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Methi%20Khakhra'" alt="Methi Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Methi Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">મેથી ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹75</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(4)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Tangy Chat Masala
+                        </div>
+                        <img src="https://placehold.co/400x400/eeeeee/999999?text=Chat%20Khakhra" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Chat%20Khakhra'" alt="Chat Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Chat Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">ચાટ ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹100</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(5)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Moth Bean
+                        </div>
+                        <img src="https://placehold.co/400x400/eeeeee/999999?text=Math%20Khakhra" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Math%20Khakhra'" alt="Math Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Math Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">મઠ ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹100</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(6)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div><div class="product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col">
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            Moong Bean
+                        </div>
+                        <img src="https://placehold.co/400x400/eeeeee/999999?text=Mag%20Khakhra" onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=Mag%20Khakhra'" alt="Mag Khakhra" class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">Mag Khakhra</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">મગ ખાખરા</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹100</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(7)" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                </div></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Image Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80" onerror="this.src='https://placehold.co/600x800/1e40af/ffffff?text=Indian+Spices'" alt="Indian Spices" class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="https://placehold.co/600x800/fde047/1e40af?text=Rolling+Dough" onerror="this.src='https://placehold.co/600x800/fde047/1e40af?text=Rolling+Dough'" alt="Rolling Dough" class="rounded-xl shadow-lg w-full h-64 object-cover mt-8">
+                </div>
+                
+                <!-- Content -->
+                <div>
+                    <h2 class="text-sm font-bold text-brand-blue tracking-widest uppercase mb-2">Our Heritage</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-gujarati">The Tradition of Pure Taste</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Geetaba Na Khakhra, we believe in the philosophy of <strong>"સાત્વિક અને શુદ્ધ આહાર"</strong> (Sattvic and pure diet). Every khakhra is a testament to traditional Gujarati culinary arts, rolled thin and hand-roasted to perfection.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        We absolutely use <strong>Zero Maida</strong>. Our khakhras are crafted using premium whole wheat flour and carefully selected authentic spices. Whether it's the comforting warmth of Jeera or the tangy punch of Chat Masala, we ensure every bite is crispy, healthy, and full of flavor.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-700 font-medium">
+                            <span class="w-8 h-8 rounded-full bg-blue-100 text-brand-blue flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            100% Vegetarian &amp; Sattvic
+                        </li>
+                        <li class="flex items-center text-gray-700 font-medium">
+                            <span class="w-8 h-8 rounded-full bg-yellow-100 text-yellow-700 flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-fire"></i>
+                            </span>
+                            Hand-Roasted, Not Fried
+                        </li>
+                        <li class="flex items-center text-gray-700 font-medium">
+                            <span class="w-8 h-8 rounded-full bg-red-100 text-brand-red flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+                            Made with Love (Handmade)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-brand-yellow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex flex-col items-start font-gujarati mb-6 bg-white p-3 rounded inline-block">
+                        <span class="text-[10px] text-brand-red font-bold leading-none mb-0.5">॥ શ્રી ॥</span>
+                        <div class="bg-brand-blue text-white px-3 py-0.5 rounded-t-sm font-bold text-xs w-full text-center">ગીતાબા ના</div>
+                        <div class="bg-brand-yellow text-brand-red px-4 py-1 rounded-b-sm font-black text-lg">ખાખરા</div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">
+                        સાત્વિક અને શુદ્ધ આહાર એટલે ખાખરા.<br>
+                        Authentic, Handmade, Zero Maida Gujarati Khakhras delivered fresh.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-blue transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-500 transition-colors">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-brand-yellow transition-colors">Home</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-brand-yellow transition-colors">Shop Flavors</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-brand-yellow transition-colors">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white border-b border-gray-700 pb-2">Contact Us</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-3 text-brand-yellow"></i>
+                            <span class="text-gray-400">B-506, Sthaptya-2, TP-13, Vadodara, Gujarat</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-brand-yellow"></i>
+                            <span class="text-gray-400">+91 90164 46621</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3 text-brand-yellow"></i>
+                            <span class="text-gray-400">hello@geetabakhakhra.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+                <p>© <span id="year">2026</span> Geetaba Na Khakhra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Overlay & Sidebar -->
+    <div id="cart-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] hidden transition-opacity duration-300 opacity-0" onclick="toggleCart()"></div>
+    
+    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-96 bg-white z-[70] transform translate-x-full transition-transform duration-300 shadow-2xl flex flex-col">
+        <!-- Cart Header -->
+        <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
+            <h2 class="text-xl font-bold text-gray-900 flex items-center">
+                <i class="fa-solid fa-bag-shopping mr-2 text-brand-blue"></i> Your Order
+            </h2>
+            <button onclick="toggleCart()" class="text-gray-400 hover:text-red-500 transition-colors p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Cart Items Container Wrapper -->
+        <div class="flex-1 overflow-y-auto p-6 space-y-4">
+            <div id="empty-cart-msg" class="text-center text-gray-500 mt-10">
+                <i class="fa-solid fa-basket-shopping text-4xl mb-4 text-gray-300"></i>
+                <p>Your cart is empty.</p>
+                <button onclick="toggleCart(); window.location.href='#menu'" class="mt-4 text-brand-blue font-medium hover:underline">Browse Menu</button>
+            </div>
+            
+            <!-- Items injected by JS -->
+            <div id="cart-items-container" class="space-y-4"></div>
+        </div>
+
+        <!-- Cart Footer / Checkout -->
+        <div class="border-t border-gray-100 p-6 bg-white">
+            <div class="flex justify-between text-base font-medium text-gray-900 mb-4">
+                <p>Subtotal</p>
+                <p>₹<span id="cart-total">0</span></p>
+            </div>
+            
+            <!-- Added Delivery Address Field -->
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Delivery Address <span class="text-red-500">*</span></label>
+                <textarea id="customer-address" rows="3" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue bg-gray-50 resize-none" placeholder="Enter your full home/office address..."></textarea>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-2">Payment Method</label>
+                <select id="payment-method" class="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-brand-blue bg-gray-50">
+                    <option value="Online (GPay / PhonePe)">Online (GPay / PhonePe)</option>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                </select>
+            </div>
+
+            <p class="text-sm text-gray-500 mb-6">Shipping and taxes discussed on WhatsApp.</p>
+            <button onclick="checkout()" class="w-full bg-[#25D366] text-white px-6 py-3 rounded font-bold hover:bg-[#128C7E] transition-colors shadow-md flex justify-center items-center">
+                Order via WhatsApp <i class="fa-brands fa-whatsapp ml-2 text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Custom Toast Notification Container -->
+    <div id="toast-container" class="fixed bottom-4 right-4 z-[80] flex flex-col space-y-2"></div>
+
+    <!-- Application Logic -->
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Exact official Menu from the wrapper image
+        const products = [
+            { id: 1, name: "સાત્વિક સાદા ખાખરા", en_name: "Sada Khakhra", price: 75, tag: "Plain & Pure", img: "Sada_khakhra_Google.jpg" },
+            { id: 2, name: "જીરા ખાખરા", en_name: "Jeera Khakhra", price: 75, tag: "Cumin Flavor", img: "20260621_233452.jpg" },
+            { id: 3, name: "મસાલા ખાખરા", en_name: "Masala Khakhra", price: 75, tag: "Spicy & Tasty", img: "Mashala_khakhra_205016.jpg" },
+            { id: 4, name: "મેથી ખાખરા", en_name: "Methi Khakhra", price: 75, tag: "Fenugreek", img: "Methi_khakhra_Google.jpg" },
+            { id: 5, name: "ચાટ ખાખરા", en_name: "Chat Khakhra", price: 100, tag: "Tangy Chat Masala", img: "Chat_khakhra_Google.jpg" },
+            { id: 6, name: "મઠ ખાખરા", en_name: "Math Khakhra", price: 100, tag: "Moth Bean", img: "Math_khakhra_Google.jpg" },
+            { id: 7, name: "મગ ખાખરા", en_name: "Mag Khakhra", price: 100, tag: "Moong Bean", img: "Mung_khakhra_.jpg" }
+        ];
+
+        let cart = [];
+
+        // Render Products
+        function renderProducts() {
+            const container = document.getElementById('products-container');
+            container.innerHTML = '';
+
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-xl group flex flex-col';
+                
+                card.innerHTML = `
+                    <div class="relative h-56 bg-gray-50 overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute top-2 left-2 z-10 bg-brand-yellow text-xs font-bold px-2 py-1 rounded text-yellow-900">
+                            ${product.tag}
+                        </div>
+                        <img src="${product.img}" 
+                             onerror="this.src='https://placehold.co/400x400/eeeeee/999999?text=${encodeURIComponent(product.en_name)}'" 
+                             alt="${product.en_name}" 
+                             class="product-img w-full h-full object-contain drop-shadow-lg transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 leading-tight">${product.en_name}</h4>
+                                <h5 class="text-sm font-gujarati text-brand-red font-semibold">${product.name}</h5>
+                            </div>
+                            <span class="text-lg font-bold text-brand-blue">₹${product.price}</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4 flex-1">200g Pack • Hand-roasted • Zero Maida</p>
+                        <button onclick="addToCart(${product.id})" class="w-full bg-white border-2 border-brand-blue text-brand-blue font-semibold py-2 rounded hover:bg-brand-blue hover:text-white transition-colors duration-300 flex justify-center items-center">
+                            <i class="fa-solid fa-plus mr-2"></i> Add to Cart
+                        </button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Cart Functions
+        function toggleCart() {
+            const sidebar = document.getElementById('cart-sidebar');
+            const overlay = document.getElementById('cart-overlay');
+            
+            if (sidebar.classList.contains('translate-x-full')) {
+                // Open
+                sidebar.classList.remove('translate-x-full');
+                overlay.classList.remove('hidden');
+                // slight delay for opacity transition
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+            } else {
+                // Close
+                sidebar.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existingItem = cart.find(item => item.id === productId);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+
+            updateCartUI();
+            showToast(`Added ${product.en_name} to cart!`);
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartUI();
+        }
+
+        function updateQuantity(productId, delta) {
+            const item = cart.find(item => item.id === productId);
+            if (item) {
+                item.quantity += delta;
+                if (item.quantity <= 0) {
+                    removeFromCart(productId);
+                } else {
+                    updateCartUI();
+                }
+            }
+        }
+
+        function updateCartUI() {
+            // Update Count
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cart-count').textContent = totalItems;
+
+            // Update Items List
+            const container = document.getElementById('cart-items-container');
+            const emptyMsg = document.getElementById('empty-cart-msg');
+            
+            if (cart.length === 0) {
+                container.innerHTML = '';
+                emptyMsg.style.display = 'block';
+                document.getElementById('cart-total').textContent = '0';
+                return;
+            }
+
+            emptyMsg.style.display = 'none';
+            container.innerHTML = '';
+
+            let total = 0;
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                const el = document.createElement('div');
+                el.className = 'flex items-center py-3 border-b border-gray-100';
+                el.innerHTML = `
+                    <img src="${item.img}" onerror="this.src='https://placehold.co/100x100/eeeeee/999999'" class="w-16 h-16 object-contain rounded bg-gray-50 p-1 mr-4 border border-gray-200">
+                    <div class="flex-1">
+                        <h5 class="text-sm font-bold text-gray-900">${item.en_name}</h5>
+                        <p class="text-xs text-brand-red font-gujarati">${item.name}</p>
+                        <div class="flex items-center mt-2">
+                            <button onclick="updateQuantity(${item.id}, -1)" class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200">-</button>
+                            <span class="mx-3 text-sm font-medium">${item.quantity}</span>
+                            <button onclick="updateQuantity(${item.id}, 1)" class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200">+</button>
+                        </div>
+                    </div>
+                    <div class="text-right ml-4">
+                        <p class="text-sm font-bold text-brand-blue">₹${itemTotal}</p>
+                        <button onclick="removeFromCart(${item.id})" class="text-xs text-red-400 hover:text-red-600 mt-2 underline">Remove</button>
+                    </div>
+                `;
+                container.appendChild(el);
+            });
+
+            document.getElementById('cart-total').textContent = total;
+        }
+
+        function showToast(message) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            
+            toast.className = 'bg-gray-900 text-white px-4 py-3 rounded shadow-lg flex items-center toast-enter text-sm font-medium border-l-4 border-brand-green';
+            toast.innerHTML = `
+                <i class="fa-solid fa-circle-check text-brand-green mr-2"></i>
+                ${message}
+            `;
+            
+            container.appendChild(toast);
+            
+            // Trigger animation
+            setTimeout(() => {
+                toast.classList.remove('toast-enter');
+                toast.classList.add('toast-enter-active');
+            }, 10);
+
+            // Remove toast
+            setTimeout(() => {
+                toast.classList.remove('toast-enter-active');
+                toast.classList.add('toast-exit');
+                setTimeout(() => {
+                    toast.classList.remove('toast-exit');
+                    toast.classList.add('toast-exit-active');
+                    setTimeout(() => toast.remove(), 300);
+                }, 10);
+            }, 3000);
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                showToast("Your cart is empty!");
+                return;
+            }
+            
+            // Check if address is filled
+            const address = document.getElementById('customer-address').value.trim();
+            if (!address) {
+                showToast("Please enter your delivery address!");
+                document.getElementById('customer-address').focus();
+                return;
+            }
+            
+            const paymentMethod = document.getElementById('payment-method').value;
+            const totalAmount = document.getElementById('cart-total').textContent;
+            
+            // Build the WhatsApp message
+            let message = "જય માતાજી! 🙏\nI would like to place an order from *Geetaba Na Khakhra*:\n\n";
+            
+            cart.forEach((item, index) => {
+                message += `${index + 1}. *${item.en_name}* (${item.name})\n`;
+                message += `   Qty: ${item.quantity} x ₹${item.price} = ₹${item.price * item.quantity}\n`;
+            });
+            
+            message += `\n*Total Amount:* ₹${totalAmount}\n`;
+            message += `*Payment Method:* ${paymentMethod}\n`;
+            message += `*Delivery Address:*\n${address}\n\n`;
+            message += "Order conform mate call karo";
+
+            // WhatsApp link with the specific phone number
+            const whatsappNumber = "919016446621";
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            
+            showToast("Redirecting to WhatsApp...");
+            
+            // Open WhatsApp in a new tab
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+            }, 1000);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+        });
+    </script>
+
+<div style="height: 55px !important;"></div></body></html>
